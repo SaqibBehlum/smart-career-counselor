@@ -38,7 +38,7 @@ ALLOWED_EXTENSIONS = {'pdf', 'png', 'jpg', 'jpeg', 'gif', 'bmp', 'docx', 'doc', 
 
 # GROQ API - FREE & FAST (Meta Llama)
 
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "Secret"
 
 # Initialize Groq client
 groq_client = OpenAI(
