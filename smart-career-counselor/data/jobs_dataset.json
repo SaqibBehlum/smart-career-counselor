@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Full Stack Developer",
+    "company": "Tech Corp",
+    "salary": "$80,000 - $120,000",
+    "required_skills": ["JavaScript", "React", "Node.js", "Python", "MongoDB", "Git"],
+    "min_experience": 2
+  },
+  {
+    "title": "Data Scientist",
+    "company": "Data Analytics Inc",
+    "salary": "$90,000 - $140,000",
+    "required_skills": ["Python", "Machine Learning", "TensorFlow", "SQL", "Statistics", "Pandas"],
+    "min_experience": 3
+  },
+  {
+    "title": "Frontend Developer",
+    "company": "Design Studios",
+    "salary": "$70,000 - $100,000",
+    "required_skills": ["HTML", "CSS", "JavaScript", "React", "Vue.js", "TypeScript"],
+    "min_experience": 2
+  },
+  {
+    "title": "Backend Developer",
+    "company": "Cloud Systems",
+    "salary": "$85,000 - $130,000",
+    "required_skills": ["Java", "Spring Boot", "PostgreSQL", "Docker", "Kubernetes", "AWS"],
+    "min_experience": 3
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "AI Innovations",
+    "salary": "$100,000 - $160,000",
+    "required_skills": ["Python", "PyTorch", "TensorFlow", "Deep Learning", "NLP", "Computer Vision"],
+    "min_experience": 3
+  },
+  {
+    "title": "DevOps Engineer",
+    "company": "Infrastructure Co",
+    "salary": "$90,000 - $135,000",
+    "required_skills": ["Linux", "Docker", "Kubernetes", "Jenkins", "Terraform", "AWS"],
+    "min_experience": 2
+  },
+  {
+    "title": "Mobile App Developer",
+    "company": "Mobile First",
+    "salary": "$75,000 - $115,000",
+    "required_skills": ["React Native", "Flutter", "iOS", "Android", "Firebase", "REST API"],
+    "min_experience": 2
+  },
+  {
+    "title": "UI/UX Designer",
+    "company": "Creative Agency",
+    "salary": "$65,000 - $95,000",
+    "required_skills": ["Figma", "Adobe XD", "Sketch", "Prototyping", "User Research", "Wireframing"],
+    "min_experience": 2
+  },
+  {
+    "title": "Cybersecurity Analyst",
+    "company": "SecureNet",
+    "salary": "$85,000 - $125,000",
+    "required_skills": ["Network Security", "Penetration Testing", "SIEM", "Python", "Linux", "Cryptography"],
+    "min_experience": 3
+  },
+  {
+    "title": "Cloud Architect",
+    "company": "CloudTech Solutions",
+    "salary": "$110,000 - $170,000",
+    "required_skills": ["AWS", "Azure", "GCP", "Microservices", "Serverless", "Docker"],
+    "min_experience": 5
+  },
+  {
+    "title": "Business Analyst",
+    "company": "Consulting Group",
+    "salary": "$70,000 - $105,000",
+    "required_skills": ["SQL", "Excel", "Tableau", "Requirements Gathering", "Agile", "Communication"],
+    "min_experience": 2
+  },
+  {
+    "title": "QA Engineer",
+    "company": "Quality Assurance Ltd",
+    "salary": "$65,000 - $95,000",
+    "required_skills": ["Selenium", "Jest", "Testing", "Automation", "CI/CD", "Python"],
+    "min_experience": 2
+  },
+  {
+    "title": "Product Manager",
+    "company": "Product Innovations",
+    "salary": "$95,000 - $145,000",
+    "required_skills": ["Product Strategy", "Agile", "Roadmapping", "User Stories", "Analytics", "Leadership"],
+    "min_experience": 4
+  },
+  {
+    "title": "Blockchain Developer",
+    "company": "CryptoTech",
+    "salary": "$90,000 - $150,000",
+    "required_skills": ["Solidity", "Ethereum", "Smart Contracts", "Web3.js", "JavaScript", "Cryptography"],
+    "min_experience": 2
+  },
+  {
+    "title": "AI Research Scientist",
+    "company": "Research Labs",
+    "salary": "$120,000 - $180,000",
+    "required_skills": ["Python", "Research", "Deep Learning", "NLP", "Computer Vision", "Mathematics"],
+    "min_experience": 4
+  },
+  {
+    "title": "Database Administrator",
+    "company": "Data Management Corp",
+    "salary": "$80,000 - $120,000",
+    "required_skills": ["SQL", "Oracle", "PostgreSQL", "MongoDB", "Database Design", "Performance Tuning"],
+    "min_experience": 3
+  },
+  {
+    "title": "Game Developer",
+    "company": "Gaming Studios",
+    "salary": "$75,000 - $110,000",
+    "required_skills": ["Unity", "C#", "Unreal Engine", "3D Modeling", "Game Design", "Physics"],
+    "min_experience": 2
+  },
+  {
+    "title": "IoT Engineer",
+    "company": "Smart Devices Inc",
+    "salary": "$85,000 - $125,000",
+    "required_skills": ["Embedded Systems", "C++", "Python", "MQTT", "Sensors", "Raspberry Pi"],
+    "min_experience": 3
+  },
+  {
+    "title": "Digital Marketing Manager",
+    "company": "Marketing Agency",
+    "salary": "$65,000 - $100,000",
+    "required_skills": ["SEO", "Google Analytics", "Content Marketing", "Social Media", "PPC", "Email Marketing"],
+    "min_experience": 3
+  },
+  {
+    "title": "Solutions Architect",
+    "company": "Enterprise Solutions",
+    "salary": "$105,000 - $160,000",
+    "required_skills": ["System Design", "AWS", "Microservices", "API Design", "Security", "Leadership"],
+    "min_experience": 5
+  }
+]

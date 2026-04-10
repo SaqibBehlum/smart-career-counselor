@@ -1,0 +1,44 @@
+{
+  "Programming Languages": [
+    "Python", "JavaScript", "Java", "C++", "C#", "TypeScript", "Go", "Rust", "Ruby", "PHP", "Swift", "Kotlin", "R", "Scala", "Perl", "Dart", "Solidity"
+  ],
+  "Web Development": [
+    "HTML", "CSS", "React", "Angular", "Vue.js", "Node.js", "Express", "Django", "Flask", "Spring Boot", "ASP.NET", "jQuery", "Bootstrap", "Tailwind CSS", "Next.js", "Nuxt.js", "REST API", "GraphQL"
+  ],
+  "Mobile Development": [
+    "React Native", "Flutter", "iOS", "Android", "Xamarin", "Ionic", "Swift", "Kotlin", "Firebase"
+  ],
+  "Database": [
+    "SQL", "MySQL", "PostgreSQL", "MongoDB", "Oracle", "SQLite", "Redis", "Cassandra", "DynamoDB", "Firebase", "Neo4j", "Database Design", "Performance Tuning"
+  ],
+  "Cloud & DevOps": [
+    "AWS", "Azure", "GCP", "Docker", "Kubernetes", "Jenkins", "CI/CD", "Terraform", "Ansible", "Linux", "Git", "GitHub", "GitLab", "Serverless", "Microservices"
+  ],
+  "Data Science & ML": [
+    "Machine Learning", "Deep Learning", "TensorFlow", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Jupyter", "NLP", "Computer Vision", "Statistics", "Data Analysis", "Big Data", "Hadoop", "Spark"
+  ],
+  "Design": [
+    "Figma", "Adobe XD", "Sketch", "Photoshop", "Illustrator", "UI Design", "UX Design", "Prototyping", "Wireframing", "User Research", "InVision", "Zeplin"
+  ],
+  "Testing": [
+    "Selenium", "Jest", "JUnit", "Pytest", "Cypress", "Automation Testing", "Manual Testing", "Test-Driven Development", "Unit Testing", "Integration Testing"
+  ],
+  "Security": [
+    "Network Security", "Cybersecurity", "Penetration Testing", "SIEM", "Cryptography", "Ethical Hacking", "Security Auditing", "Firewall", "VPN"
+  ],
+  "Game Development": [
+    "Unity", "Unreal Engine", "Game Design", "3D Modeling", "Blender", "Maya", "Physics", "Animation"
+  ],
+  "Emerging Tech": [
+    "Blockchain", "Smart Contracts", "Ethereum", "Web3.js", "IoT", "Embedded Systems", "MQTT", "Raspberry Pi", "Arduino", "5G", "Edge Computing"
+  ],
+  "Business & Analytics": [
+    "Excel", "Tableau", "Power BI", "Google Analytics", "Requirements Gathering", "Business Analysis", "Product Management", "Agile", "Scrum", "JIRA", "Roadmapping"
+  ],
+  "Soft Skills": [
+    "Communication", "Leadership", "Problem Solving", "Team Collaboration", "Critical Thinking", "Time Management", "Adaptability", "Creativity", "Project Management"
+  ],
+  "Marketing": [
+    "SEO", "SEM", "Content Marketing", "Social Media", "PPC", "Email Marketing", "Google Ads", "Facebook Ads", "Marketing Strategy", "Brand Management"
+  ]
+}

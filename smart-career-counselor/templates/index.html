@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Career Counselor - AI-Powered Career Guidance</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smart Career Counselor - AI/ML Platform</title>
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
+        
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    
+    <!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-brand">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo-img">
+            <h1>Smart Career Counselor</h1>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#resume" class="nav-link">Resume Analysis</a>
+            <a href="#jobs" class="nav-link">Job Recommendations</a>
+            <a href="#chat" class="nav-link">AI Assistant</a>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Your AI-Powered Career Partner</h2>
+                <p class="hero-subtitle">Upload your resume, get personalized job recommendations, and chat with our AI career counselor</p>
+                <div class="hero-features">
+                    <div class="feature-card">
+                        <span class="feature-icon">📋</span>
+                        <h3>Resume Analysis</h3>
+                        <p>AI-powered skill extraction</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">💼</span>
+                        <h3>Job Matching</h3>
+                        <p>ML-based recommendations</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">💬</span>
+                        <h3>AI Chatbot</h3>
+                        <p>24/7 career guidance</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">📈</span>
+                        <h3>Skill Gap Analysis</h3>
+                        <p>Identify missing skills</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- API Key Modal -->
+    <div id="apiKeyModal" class="modal">
+        <div class="modal-content">
+            <h3>Enter Your Claude API Key</h3>
+            <p>To use the AI chatbot features, please enter your Anthropic Claude API key.</p>
+            <input type="password" id="apiKeyInput" placeholder="sk-ant-...">
+            <button onclick="saveApiKey()" class="btn-primary">Save API Key</button>
+            <p class="api-help">Don't have an API key? <a href="https://console.anthropic.com/" target="_blank">Get one here</a></p>
+        </div>
+    </div>
+
+    <!-- Resume Upload Section -->
+    <section id="resume" class="section">
+        <div class="container">
+            <h2 class="section-title">📋 Upload Your Resume</h2>
+            <div class="upload-container">
+                <div class="upload-area" id="uploadArea">
+                    <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                    </svg>
+                    <h3>Drop your resume here or click to browse</h3>
+                    <p>Supports PDF, Images, DOCX, TXT formats</p>
+                    <input type="file" id="resumeInput" accept=".pdf,.png,.jpg,.jpeg,.gif,.bmp,.docx,.doc,.txt" style="display: none;">
+                </div>
+                <div id="uploadStatus" class="upload-status"></div>
+            </div>
+
+            <!-- Skills Analysis Result -->
+            <div id="skillsResult" class="results-container" style="display: none;">
+                <h3>✨ Skills Extracted from Your Resume</h3>
+                <div class="stats-cards">
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalSkills">0</div>
+                        <div class="stat-label">Skills Found</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="experienceYears">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="matchedJobs">0</div>
+                        <div class="stat-label">Matching Jobs</div>
+                    </div>
+                </div>
+                <div id="skillsGrid" class="skills-grid"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Recommendations Section -->
+    <section id="jobs" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">💼 Personalized Job Recommendations</h2>
+            <div id="jobsContainer" class="jobs-container">
+                <div class="empty-state">
+                    <p>Upload your resume to get personalized job recommendations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Gap Analysis Section -->
+    <section id="skillgap" class="section">
+        <div class="container">
+            <h2 class="section-title">📈 Skill Gap Analysis</h2>
+            <div class="skillgap-container">
+                <div class="input-group">
+                    <input type="text" id="targetJobInput" placeholder="Enter target job title (e.g., Full Stack Developer)" class="form-input">
+                    <button onclick="analyzeSkillGap()" class="btn-primary">Analyze</button>
+                </div>
+                <div id="skillGapResult" class="skillgap-result"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Section -->
+    <section id="chat" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">💬 AI Career Counselor Chat</h2>
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="bot-message">
+                        <div class="message-avatar">💬</div>
+                        <div class="message-content">
+                            <p>Hello! I'm your AI Career Counselor. I can help you with:</p>
+                            <ul>
+                                <li>Career advice and guidance</li>
+                                <li>Interview preparation tips</li>
+                                <li>Resume improvement suggestions</li>
+                                <li>Skill development recommendations</li>
+                                <li>Job search strategies</li>
+                            </ul>
+                            <p>How can I assist you today?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <input type="text" id="chatInput" placeholder="Ask me anything about your career..." class="chat-input">
+                    <button onclick="sendMessage()" class="btn-send">Send</button>
+                </div>
+            </div>
+
+            <!-- Interview Prep -->
+            <div class="interview-prep">
+                <h3>💡 Interview Preparation</h3>
+                <div class="input-group">
+                    <input type="text" id="interviewJobInput" placeholder="Enter job role (e.g., Data Scientist)" class="form-input">
+                    <button onclick="generateInterviewQuestions()" class="btn-primary">Generate Questions</button>
+                </div>
+                <div id="interviewQuestions" class="interview-result"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Smart Career Counselor </p>
+            <p>An Intelligent Career Guidance System</p>
+        </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
